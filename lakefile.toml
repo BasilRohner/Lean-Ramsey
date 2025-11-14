@@ -1,0 +1,17 @@
+name = "Lean-Ramsey"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["LeanRamsey"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+
+[[lean_lib]]
+name = "LeanRamsey"
